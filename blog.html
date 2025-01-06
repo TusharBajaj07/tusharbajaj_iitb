@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <!-- Global Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Astro v5.0.5">
+
+  <!-- Favicon/theme (you can replace these files if desired) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#24d05a">
+  <link rel="icon" type="image/svg+xml" href="favicon.ico">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Web Monetization (optional, you can remove if not needed) -->
+  <meta name="monetization" content="$ilp.uphold.com/rEgHHBQGDUDP">
+
+  <!-- Primary Meta Tags -->
+  <title>Tushar Bajaj</title>
+  <meta name="title" content="Tushar Bajaj">
+  <meta name="description"
+        content="I'm Tushar Bajaj, a Mechanical Engineering undergrad at IIT Bombay with a minor in AI/DS. I build projects in AI, Robotics, and Finance.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tushar-website.example/">
+  <meta property="og:title" content="Tushar Bajaj">
+  <meta property="og:description"
+        content="I'm Tushar Bajaj, a Mechanical Engineering undergrad at IIT Bombay with a minor in AI/DS. I build projects in AI, Robotics, and Finance.">
+  <meta property="og:image" content="https://tushar-website.example/base-card.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tushar-website.example/">
+  <meta property="twitter:title" content="Tushar Bajaj">
+  <meta property="twitter:description"
+        content="I'm Tushar Bajaj, a Mechanical Engineering undergrad at IIT Bombay with a minor in AI/DS. I build projects in AI, Robotics, and Finance.">
+  <meta name="twitter:creator" content="@TusharTwitterHandle">
+  <meta name="twitter:image" content="https://tushar-website.example/base-card.png">
+
+  <!-- RSS Link -->
+  <link rel="alternate" href="rss.xml" type="application/rss+xml" title="Tushar's RSS Feed">
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="sitemap-index.xml">
+
+  <!-- Google Search Console (optional) -->
+  <meta name="google-site-verification" content="4G1fPeskmgxlQRWUoJxDlkDxL0VswExwh1MuRAwkQzg">
+
+  <!-- Analytics (optional) -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="OHWKNQJQ" defer></script>
+
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-section">
+      <div class="header-frame">
+        <h1>Tushar Bajaj</h1>
+        <h2>Pro Blogger IIT Bombay</h2>
+      </div>
+      <div class="img-frame">
+        <img id="propic" src="img/face.jpeg" alt="Tushar's face">
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="https://github.com/TusharBajaj07">GitHub</a>
+    <a href="https://x.com/TusharB92708182">Twitter</a>
+    <a href="https://www.linkedin.com/in/tushar-bajaj-207b79221/">LinkedIn</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <p>Seriously!!?? you thought I would write blogs??</p>
+  </main>
+
+
+
+  <!-- Random Color Script (Unchanged) -->
+  <script>
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function setRandomLinkColor() {
+      Array.from(document.getElementsByTagName("a")).forEach((e) => {
+        e.style.textDecorationColor = getRandomColor();
+      });
+
+      Array.from(document.getElementsByTagName("input")).forEach((e) => {
+        e.style.borderBottomColor = getRandomColor();
+      });
+
+      Array.from(document.getElementsByTagName("blockquote")).forEach((e) => {
+        e.style.borderLeftColor = getRandomColor();
+      });
+    }
+
+    function setColorHoverListener() {
+      Array.from(document.querySelectorAll("a, button, input")).forEach((e) => {
+        e.addEventListener("mouseover", setRandomLinkColor);
+      });
+    }
+
+    (function () {
+      setRandomLinkColor();
+      setColorHoverListener();
+    })();
+  </script>
+</body>
+</html>

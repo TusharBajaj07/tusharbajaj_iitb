@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <!-- Global Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Astro v5.0.5">
+  <title>Reinforcement Learning-Driven Stock Trading</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-section_projects">
+      <div class="header-frame_projects">
+        <h1>Reinforcement Learning-Driven Stock Trading</h1>
+        <h2>A platform to optimize trading strategies using AI</h2>
+      </div>
+      <div class="img-frame">
+        <img id="stock-trading-img" src="../../photos/rl.png" alt="Reinforcement Learning-Driven Stock Trading">
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../projects.html" class="active">Projects</a>
+    <a href="../../blog.html">Blog</a>
+    <a href="https://github.com/TusharBajaj07">GitHub</a>
+    <a href="https://x.com/TusharB92708182">Twitter</a>
+    <a href="https://www.linkedin.com/in/tushar-bajaj-207b79221/">LinkedIn</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <h1 class="article-title">Reinforcement Learning-Driven Stock Trading</h1>
+      <time>Jan 4, 2025</time>
+      <div>
+        <a class="tag posty" href="../tag/machinelearning.html">#MachineLearning</a>
+        <a class="tag posty" href="../tag/finance.html">#Finance</a>
+        <a class="tag posty" href="../tag/ai.html">#AI</a>
+      </div>
+      <hr>
+
+      <div class="blog-post">
+        <p>This project focuses on leveraging reinforcement learning to build an advanced stock trading platform capable of optimizing strategies and achieving consistent growth in financial portfolios.</p>
+        <ul>
+          <li>Engineered a stock trading environment with <strong>Python</strong> and <strong>OpenAI Gym</strong>, processing over 30 stock dimensions and fees.</li>
+          <li>Deployed backtesting algorithms with an initial capital of <strong>$1 million</strong>, achieving consistent portfolio growth of <strong>5-7%</strong>.</li>
+          <li>Developed and optimized a state space with <strong>181 features</strong>, including <strong>MACD</strong>, <strong>RSI</strong>, and <strong>ADX</strong>, to improve agent decision-making.</li>
+          <li>Simulated agent performance, improving strategy accuracy by <strong>15%</strong> through historical price data for reward calculations.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- Navigation for Posts -->
+  <div class="nav-posts">
+    <a href="signature.html" class="previous-post">← Previous Project</a>
+    <span class="dot">•</span>
+    <a href="aimlgc.html" class="next-post">Next Project →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Adapted by Tushar Bajaj.      Credits:
+   <a href="https://cassidoo.co/">Cassidy Williams</a>! <3
+ </footer>
+
+  <!-- Random Color Script -->
+  <script>
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function setRandomLinkColor() {
+      Array.from(document.getElementsByTagName("a")).forEach((e) => {
+        e.style.textDecorationColor = getRandomColor();
+      });
+    }
+
+    function setColorHoverListener() {
+      Array.from(document.querySelectorAll("a, button")).forEach((e) => {
+        e.addEventListener("mouseover", setRandomLinkColor);
+      });
+    }
+
+    (function () {
+      setRandomLinkColor();
+      setColorHoverListener();
+    })();
+  </script>
+</body>
+</html>

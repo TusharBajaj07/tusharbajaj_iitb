@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <!-- Global Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Astro v5.0.5">
+  <title>Compact Quadruped Robot</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-section_projects">
+      <div class="header-frame_projects">
+        <h1>Compact Quadruped Robot</h1>
+        <h2>A robotic dog powered by AI</h2>
+      </div>
+      <div class="img-frame">
+        <img id="robot-img" src="../../photos/robodog.png" alt="Compact Quadruped Robot">
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../../index.html" >Home</a>
+    <a href="../../projects.html" class="active">Projects</a>
+    <a href="../../blog.html">Blog</a>
+    <a href="https://github.com/TusharBajaj07">GitHub</a>
+    <a href="https://x.com/TusharB92708182">Twitter</a>
+    <a href="https://www.linkedin.com/in/tushar-bajaj-207b79221/">LinkedIn</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <h1 class="article-title">Compact Quadruped Robot</h1>
+      <time>Jan 4, 2025</time>
+      <div>
+        <a class="tag posty" href="../tag/robotics.html">#Robotics</a>
+        <a class="tag posty" href="../tag/automation.html">#Automation</a>
+      </div>
+      <hr>
+
+      <div class="blog-post">
+        <p>The Compact Quadruped Robot is an innovative robotic dog powered by AI and designed for advanced terrain navigation. This project combines cutting-edge technology and hardware to achieve agility and precision in robotics.</p>
+        <ul>
+          <li>Engineered using <strong>PyTorch</strong>, <strong>NumPy</strong>, <strong>SolidWorks</strong>, <strong>Tinkercad</strong>, <strong>Arduino</strong>, and <strong>ESP32</strong> components.</li>
+          <li>Implemented ML algorithms and neural networks with <strong>Conda</strong>, <strong>OpenCV</strong>, and <strong>TensorFlow</strong>.</li>
+          <li>Directed hardware development, including <strong>laser cutting</strong> and <strong>PCB design</strong>, creating an innovative voice-activated robot dog.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- Navigation for Posts -->
+  <div class="nav-posts">
+    <a href="robodog.html" class="previous-post">← Previous Project</a>
+    <span class="dot">•</span>
+    <a href="agastya.html" class="next-post">Next Project →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Adapted by Tushar Bajaj.      Credits:
+   <a href="https://cassidoo.co/">Cassidy Williams</a>! <3
+ </footer>
+
+  <!-- Random Color Script -->
+  <script>
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function setRandomLinkColor() {
+      Array.from(document.getElementsByTagName("a")).forEach((e) => {
+        e.style.textDecorationColor = getRandomColor();
+      });
+    }
+
+    function setColorHoverListener() {
+      Array.from(document.querySelectorAll("a, button")).forEach((e) => {
+        e.addEventListener("mouseover", setRandomLinkColor);
+      });
+    }
+
+    (function () {
+      setRandomLinkColor();
+      setColorHoverListener();
+    })();
+  </script>
+</body>
+</html>

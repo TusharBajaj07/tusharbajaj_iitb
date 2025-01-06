@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <!-- Global Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Astro v5.0.5">
+  <title>RC Aircraft</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-section_projects">
+      <div class="header-frame_projects">
+        <h1>RC Aircraft</h1>
+        <h2>A hand-made plane built from scratch</h2>
+      </div>
+      <div class="img-frame">
+        <img id="rc-aircraft-img" src="../../photos/rcplane.png" alt="RC Aircraft in flight">
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../projects.html" class="active">Projects</a>
+    <a href="../../blog.html">Blog</a>
+    <a href="https://github.com/TusharBajaj07">GitHub</a>
+    <a href="https://x.com/TusharB92708182">Twitter</a>
+    <a href="https://www.linkedin.com/in/tushar-bajaj-207b79221/">LinkedIn</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <h1 class="article-title">RC Aircraft</h1>
+      <time>Jan 4, 2025</time>
+      <div>
+        <a class="tag posty" href="../tag/aerospace.html">#Aerospace</a>
+        <a class="tag posty" href="../tag/teamwork.html">#Teamwork</a>
+      </div>
+      <hr>
+
+      <div class="blog-post">
+        <p>The RC Aircraft was a freshman year project built during a competition organized by the Aeromodelling Club. Our team of four constructed the entire plane by hand, starting from raw materials to a fully functional aircraft.</p>
+        <ul>
+          <li>Collaborated in a team of four to build an RC plane entirely from scratch, showcasing strong teamwork and innovation.</li>
+          <li>Designed the aircraft framework, cutting and assembling materials manually to achieve aerodynamic stability.</li>
+          <li>Successfully participated in a competitive event, demonstrating the plane’s operational efficiency and maneuverability.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- Navigation for Posts -->
+  <div class="nav-posts">
+    <a href="agastya.html" class="previous-post">← Previous Project</a>
+    <span class="dot">•</span>
+    <a href="next-project.html" class="next-post">Next Project →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Adapted by Tushar Bajaj.      Credits:
+   <a href="https://cassidoo.co/">Cassidy Williams</a>! <3
+ </footer>
+
+  <!-- Random Color Script -->
+  <script>
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function setRandomLinkColor() {
+      Array.from(document.getElementsByTagName("a")).forEach((e) => {
+        e.style.textDecorationColor = getRandomColor();
+      });
+    }
+
+    function setColorHoverListener() {
+      Array.from(document.querySelectorAll("a, button")).forEach((e) => {
+        e.addEventListener("mouseover", setRandomLinkColor);
+      });
+    }
+
+    (function () {
+      setRandomLinkColor();
+      setColorHoverListener();
+    })();
+  </script>
+</body>
+</html>

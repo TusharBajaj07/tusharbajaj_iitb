@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <!-- Global Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Astro v5.0.5">
+  <title>AI-Powered Signature Verification</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-section_projects">
+      <div class="header-frame_projects">
+        <h1>AI-Powered Signature Verification</h1>
+        <h2>Secure Banking & Cheque Authentication</h2>
+      </div>
+      <div class="img-frame">
+        <img id="signature-img" src="../../photos/itsp.png" alt="AI-Powered Signature Verification">
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../projects.html" class="active">Projects</a>
+    <a href="../../blog.html">Blog</a>
+    <a href="https://github.com/TusharBajaj07">GitHub</a>
+    <a href="https://x.com/TusharB92708182">Twitter</a>
+    <a href="https://www.linkedin.com/in/tushar-bajaj-207b79221/">LinkedIn</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <h1 class="article-title">AI-Powered Signature Verification</h1>
+      <time>Jan 4, 2025</time>
+      <div>
+        <a class="tag posty" href="../tag/ai.html">#AI</a>
+        <a class="tag posty" href="../tag/finance.html">#Finance</a>
+        <a class="tag posty" href="../tag/security.html">#Security</a>
+      </div>
+      <hr>
+
+      <div class="blog-post">
+        <p>The AI-Powered Signature Verification project is a revolutionary solution to address the issue of signature fraud in financial transactions, ensuring security and efficiency in cheque authentication processes.</p>
+        <ul>
+          <li>Ranked <strong>top 10</strong> among 250+ students for developing an AI solution to address signature fraud.</li>
+          <li>Achieved <strong>96% accuracy</strong> in detecting forged signatures and providing verification within <strong>1 second</strong>.</li>
+          <li>Developed a solution adaptable to diverse signature types and platforms, ensuring <strong>universal compatibility</strong>.</li>
+          <li>Verified <strong>100+ signatures</strong> using AI, with plans for implementation in secure cheque verification for a major bank.</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <!-- Navigation for Posts -->
+  <div class="nav-posts">
+    <a href="rcplane.html" class="previous-post">← Previous Project</a>
+    <span class="dot">•</span>
+    <a href="rl.html" class="next-post">Next Project →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Adapted by Tushar Bajaj.      Credits:
+   <a href="https://cassidoo.co/">Cassidy Williams</a>! <3
+ </footer>
+
+  <!-- Random Color Script -->
+  <script>
+    let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
+
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function setRandomLinkColor() {
+      Array.from(document.getElementsByTagName("a")).forEach((e) => {
+        e.style.textDecorationColor = getRandomColor();
+      });
+    }
+
+    function setColorHoverListener() {
+      Array.from(document.querySelectorAll("a, button")).forEach((e) => {
+        e.addEventListener("mouseover", setRandomLinkColor);
+      });
+    }
+
+    (function () {
+      setRandomLinkColor();
+      setColorHoverListener();
+    })();
+  </script>
+</body>
+</html>
