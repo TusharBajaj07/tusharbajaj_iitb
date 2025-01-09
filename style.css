@@ -484,3 +484,17 @@
     color: #FFC300; /* Hover effect */
     transition: all 0.3s ease;
   }
+  .highlight-heading_3 {
+    font-size: 2rem; /* Adjusts the size */
+    font-weight: 600; /* Reduces the boldness */
+    color:#508110; /* Highlight color */
+    
+    /* Light background highlight */
+    padding: 0.5rem 1rem; /* Space around the text */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .highlight-heading_3:hover {
+    color: #FFC300; /* Hover effect */
+    transition: all 0.3s ease;
+  }
